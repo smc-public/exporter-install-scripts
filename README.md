@@ -37,7 +37,9 @@ sudo bash ./node_exporter-install.sh
 ```bash
 export RELEASE_TAG=v1
 wget https://github.com/smc-public/exporter-install-scripts/releases/download/$RELEASE_TAG/node_exporter-install.sh
-sudo bash ./node_exporter-install.sh --allow-create-user --user node_exporter --group node_exporter --verbose
+sudo bash ./node_exporter-install.sh \
+  --allow-create-user --user node_exporter --group node_exporter \
+  --verbose
 ```
 ### Uninstall an exporter previous installed by this script
 ```bash
