@@ -35,8 +35,7 @@ sudo bash ./node_exporter-install.sh
 
 ### Download a specific script release and install as an unprivileged user
 ```bash
-export RELEASE_TAG=v1
-wget https://github.com/smc-public/exporter-install-scripts/releases/download/$RELEASE_TAG/node_exporter-install.sh
+wget https://github.com/smc-public/exporter-install-scripts/releases/download/v0.1.0/node_exporter-install.sh
 sudo bash ./node_exporter-install.sh \
   --allow-create-user --user node_exporter --group node_exporter \
   --verbose
